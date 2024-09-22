@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Started</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <nav> 
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="content/images/logo.svg" alt="Research Paper Management System Logo"></a>
+            </div>
+            <ul>
+                <li><a href="#" onclick="openPopup()">Login</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Affiliates</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="popup" id="loginPopup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span> 
+            <div class="logo"> 
+                <img src="content/images/logo.svg" alt="Research Paper Management System Logo"> 
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="get-started">
+        <div class="container">
+            <div class="image-container">
+                <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg" alt="Research Image"> 
+            </div>
+            <div class="form-container">
+                <h2>Get Started</h2>
+                <form>
+                    <div class="form-row"> 
+                        <div class="form-group">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="institution">Institution:</label>
+                        <input type="text" id="institution" name="institution">
+                    </div>
+                    <div class="form-group">
+                        <label for="profession">Profession:</label>
+                        <select id="profession" name="profession">
+                            <option value="student">Student</option>
+                            <option value="professor">Professor</option>
+                            <option value="independent_reviewer">Independent Reviewer</option>
+                            <option value="researcher">Researcher</option>
+                            <option value="common_people">Common People</option>
+                        </select>
+                    </div>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Registration</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Universities</h3>
+                    <ul>
+                        <li><a href="#">Harvard University</a></li>
+                        <li><a href="#">Stanford University</a></li>
+                        <li><a href="#">MIT</a></li>
+                        </ul>
+                </div>
+                <div class="column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Research Guides</a></li>
+                        <li><a href="#">Citation Styles</a></li>
+                        <li><a href="#">Academic Writing Tips</a></li>
+                        </ul>
+                </div>
+                <div class="column">
+                    <h3>Newsletter</h3>
+                    <p>Stay updated on the latest research and academic news.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom"> 
+    
+                <p>&copy; 2023
+     Research Paper Management System</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

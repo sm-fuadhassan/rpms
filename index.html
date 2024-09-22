@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Research Paper Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add this style within the <head> or in your external style.css file */
+        .call-to-action {
+            background: linear-gradient(to left, #0a089c, #6296f5)
+        }
+    </style>
+</head>
+<body>
+
+    <nav> 
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="content/images/logo.svg" alt="Research Paper Management System Logo"></a>
+            </div>
+            <ul>
+                <li><a href="#" onclick="openPopup()">Login</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Affiliates</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="popup" id="loginPopup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span> 
+            <div class="logo"> 
+                <img src="content/images/logo.svg" alt="Research Paper Management System Logo"> 
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <header>
+        <img src="content/images/logo-black.svg" width="30%" alt="Research Paper Management System Logo"> 
+        <div class="container">
+            <h1>Organize Your Research Effortlessly</h1>
+            <p>Streamline your literature review, citation management, and collaboration.</p>
+            <button><a href="registration.html">Get Started</a></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="features">
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="feature-grid">
+                    <div class="feature">
+                        <img width="96" height="96" src="https://img.icons8.com/fluency/96/search.png" alt="search"/> 
+                        <h3>Powerful Search</h3>
+                        <p>Find relevant papers quickly and easily with advanced search capabilities.</p>
+                    </div>
+                    <div class="feature">
+                        <img width="96" height="96" src="https://img.icons8.com/fluency/96/layers.png" alt="layers"/> 
+                        <h3>Efficient Organization</h3>
+                        <p>Categorize, tag, and annotate your research papers for easy access and reference.</p>
+                    </div>
+                    <div class="feature">
+                        <img width="96" height="96" src="https://img.icons8.com/external-wanicon-flat-wanicon/96/external-collaborate-business-administration-wanicon-flat-wanicon.png" alt="external-collaborate-business-administration-wanicon-flat-wanicon"/>
+                        <h3>Seamless Collaboration</h3>
+                        <p>Share and collaborate on research projects with colleagues and peers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Researchers Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-container"> 
+                        <div class="testimonial active">
+                            <p>"This system has transformed my research workflow. I can't imagine going back to the old way of doing things."</p>
+                            <p class="author">- Dr. John Smith</p>
+                        </div>
+                        <div class="testimonial">
+                            <p>This user-friendly platform has streamlined my literature review process. A must-have for any researcher!</p>
+                            <p class="author">- Dr. Sarah Jones</p>
+                        </div>
+                        <div class="testimonial">
+                            <p>A valuable tool for researchers of all levels. It has helped me stay organized and focused on my research goals.</p>
+                            <p class="author">- Dr. Anna Williams</p>
+                        </div>
+                        <div class="testimonial">
+                            <p>The powerful search and organization features have saved me countless hours. Highly recommended!</p>
+                            <p class="author">- Prof. Emily Johnson</p>
+                        </div>
+                        <div class="testimonial">
+                            <p>I highly recommend this system for its intuitive interface and comprehensive features. It has significantly improved my research efficiency.</p>
+                            <p class="author">- Prof. Michael Brown</p>
+                        </div>
+                        <div class="testimonial">
+                            <p>Collaborating with my team has never been easier. This system is a game-changer for research collaboration.</p>
+                            <p class="author">- Dr. David Lee</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <div class="container">
+                <h2>Ready to Elevate Your Research?</h2>
+                <button>Sign Up Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" onclick="openPopup()">Login</a></li>
+                        <li><a href="#">Registration</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                    </ul>
+                </div>
+                
+                <div class="column">
+                    <h3>Universities</h3>
+                    <ul>
+                        <li><a href="#">Harvard University</a></li>
+                        <li><a href="#">Stanford University</a></li>
+                        <li><a href="#">MIT</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Research Guides</a></li>
+                        <li><a href="#">Citation Styles</a></li>
+                        <li><a href="#">Academic Writing Tips</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Newsletter</h3>
+                    <p>Stay updated on the latest research and academic news.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom"> 
+                <p>&copy; 2023 Research Paper Management System</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* get-started-style.css */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex; /* Use flexbox for layout */
+}
+
+.image-container {
+    flex: 1; /* Image takes up 1/2 of the container */
+    margin-right: 40px; /* Add some spacing between image and form */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add rounded corners to the image */
+}
+
+.form-container {
+    flex: 1; /* Form takes up 1/2 of the container */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
